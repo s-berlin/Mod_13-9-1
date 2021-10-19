@@ -5,6 +5,7 @@
 using namespace std;
 
 Graph::Graph() {
+
     for (int i = 0; i < SIZE; i++)
         for (int j = 0; j < SIZE; j++)
             matrix[i][j] = 0;
@@ -26,6 +27,7 @@ void Graph::addEdge(int v1, int v2, int weight)
 // удаление участника 
 void Graph::delName(string vName)
 {
+    setlocale(LC_ALL, "");
     int vnumber;
     bool vFind = false;
     cout << "Удалить участника  " << vName << endl;
