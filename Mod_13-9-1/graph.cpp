@@ -73,7 +73,7 @@ bool Graph::vertexExists(string v)
 
 void Graph::showGraph() {
     setlocale(LC_ALL, "");
-    cout << "Граф знакомств:" << endl;
+    cout << "Граф знакомств участников:" << endl;
     cout << "        ";
     for (int i = 0; i < vertexCount; i++) cout << names[i] << "     ";
     cout << endl;
