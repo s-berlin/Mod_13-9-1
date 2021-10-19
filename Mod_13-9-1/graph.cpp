@@ -27,7 +27,6 @@ void Graph::addEdge(int v1, int v2, int weight)
 // удаление участника 
 void Graph::delName(string vName)
 {
-    setlocale(LC_ALL, "");
     int vnumber;
     bool vFind = false;
     cout << "Удалить участника  " << vName << endl;
@@ -74,7 +73,7 @@ bool Graph::vertexExists(string v)
 
 void Graph::showGraph() {
     setlocale(LC_ALL, "");
-    cout << endl << vertexCount << " участников:" << endl;
+    cout << "Граф знакомств:" << endl;
     cout << "        ";
     for (int i = 0; i < vertexCount; i++) cout << names[i] << "     ";
     cout << endl;
@@ -88,7 +87,7 @@ void Graph::showGraph() {
 
 int Graph::showList() {
     setlocale(LC_ALL, "");
-    cout << endl << vertexCount << " участников:" << endl;
+    cout << "Участников " << vertexCount << ":" << endl;
     for (int i = 0; i < vertexCount; i++) cout << i + 1 << " - " << names[i] << endl;
     cout << endl;
     return vertexCount;

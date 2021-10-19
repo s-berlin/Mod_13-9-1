@@ -33,6 +33,9 @@ int main()
     g.addEdge(5, 8, 1);
     g.addEdge(8, 6, 1);
     g.addEdge(7, 6, 1);
+    
+    g.showList();
+    g.showGraph();
 
     while (nf <= 6)
     {
