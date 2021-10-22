@@ -1,7 +1,7 @@
 //#ifndef __GRAPH__
 //#define __GRAPH__
 
-// класс граф
+// ГЄГ«Г Г±Г± ГЈГ°Г Гґ
 #define SIZE 25
 #include <iostream>
 #include <string>
@@ -11,34 +11,34 @@ class Graph {
 public:
     Graph();
 
-    // добавление вершины (имени участника)
+    // РґРѕР±Р°РІР»РµРЅРёРµ РІРµСЂС€РёРЅС‹ (РёРјРµРЅРё СѓС‡Р°СЃС‚РЅРёРєР°)
     void addName(string vName);
 
-    // удаление вершины 
+    // СѓРґР°Р»РµРЅРёРµ РІРµСЂС€РёРЅС‹ 
     void delName(string vName);
 
-    // добавление ребра (знакомства через одно "рукопожатие")
+    // РґРѕР±Р°РІР»РµРЅРёРµ СЂРµР±СЂР° (Р·РЅР°РєРѕРјСЃС‚РІР° С‡РµСЂРµР· РѕРґРЅРѕ "СЂСѓРєРѕРїРѕР¶Р°С‚РёРµ")
     void addEdge(int v1, int v2, int weight);
 
-    // удаление ребра
+    // СѓРґР°Р»РµРЅРёРµ СЂРµР±СЂР°
     void delEdge(int v1, int v2);
 
-    // показать граф
+    // РїРѕРєР°Р·Р°С‚СЊ РіСЂР°С„
     void showGraph();
 
-    // показать список участников
+    // РїРѕРєР°Р·Р°С‚СЊ СЃРїРёСЃРѕРє СѓС‡Р°СЃС‚РЅРёРєРѕРІ
     int showList();
 
-    // найти знакомства
+    // РЅР°Р№С‚Рё Р·РЅР°РєРѕРјСЃС‚РІР°
     void findFriends(int stage);
 
 private:
     bool edgeExists(int v1, int v2);
     bool vertexExists(string v);
 
-    int matrix[SIZE][SIZE];  // матрица знакомств
+    int matrix[SIZE][SIZE];  // РјР°С‚СЂРёС†Р° Р·РЅР°РєРѕРјСЃС‚РІ
 
-    string names[SIZE];   // хранилище имен
-    int vertexCount;      // количество участников
+    string names[SIZE];   // С…СЂР°РЅРёР»РёС‰Рµ РёРјРµРЅ
+    int vertexCount;      // РєРѕР»РёС‡РµСЃС‚РІРѕ СѓС‡Р°СЃС‚РЅРёРєРѕРІ
 };
 //#endif
